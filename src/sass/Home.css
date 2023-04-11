@@ -1,1 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.home {
+  background-color: rgba(215, 224, 255, 0.2588235294);
+  height: 100vh;
+  width: 100%;
+}
+.home .logo {
+  display: flex;
+  justify-content: right;
+  padding: 30px;
+}
+.home .search {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.home .search .search_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  background-color: #ffffff;
+  padding: 20px 20px;
+  border-radius: 20px;
+}
+.home .search .search_box input {
+  width: 90%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  color: rgba(0, 0, 0, 0.4);
+}
+.home .search .search_box .search_icon {
+  font-size: 30px;
+  color: rgba(32, 14, 50, 0.4);
+}
