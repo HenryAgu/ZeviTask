@@ -1,7 +1,7 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 
 // stylesheet
-import '../sass/LatestTrend.css';
+import "../sass/LatestTrend.css";
 
 // assets
 import image1 from "../assets/image1.svg";
@@ -14,7 +14,37 @@ import image5 from "../assets/image5.svg";
 import { AllContext } from "../AllContext";
 
 const LatestTrend = () => {
-    const {search} = useContext(AllContext)
+  // context imported from AllContext
+  const { search } = useContext(AllContext);
+
+  // state
+  const [trendInfo, setTrendInfo] = useState([
+    {
+      id: 1,
+      image: image1,
+      content: "Shirt with puffed sleeves",
+    },
+    {
+      id: 2,
+      image: image2,
+      content: "Linen jumpsuit",
+    },
+    {
+      id: 3,
+      image: image3,
+      content: "White formal suit",
+    },
+    {
+      id: 4,
+      image: image4,
+      content: "Pattern dresses",
+    },
+    {
+      id: 5,
+      image: image5,
+      content: "Leather shirt dress",
+    },
+  ]);
   return (
     <>
       {search ? (
@@ -22,46 +52,16 @@ const LatestTrend = () => {
           <div className="latest_trends">
             <p>Latest Trends</p>
             <div className="trends">
-              <div className="trend_card">
-                <div className="trends_image">
-                  <img src={image1} alt="" />
+              {trendInfo.map((info) => (
+                <div className="trend_card" key={info.id}>
+                  <div className="trends_image">
+                    <img src={info.image} alt="" />
+                  </div>
+                  <div className="trends_descr">
+                    <span>{info.content}</span>
+                  </div>
                 </div>
-                <div className="trends_descr">
-                  <span>Shirt with puffed sleeves</span>
-                </div>
-              </div>
-              <div className="trend_card">
-                <div className="trends_image">
-                  <img src={image2} alt="" />
-                </div>
-                <div className="trends_descr">
-                  <span>Linen jumpsuit</span>
-                </div>
-              </div>
-              <div className="trend_card">
-                <div className="trends_image">
-                  <img src={image3} alt="" />
-                </div>
-                <div className="trends_descr">
-                  <span>White formal suit</span>
-                </div>
-              </div>
-              <div className="trend_card">
-                <div className="trends_image">
-                  <img src={image4} alt="" />
-                </div>
-                <div className="trends_descr">
-                  <span>Pattern dresses</span>
-                </div>
-              </div>
-              <div className="trend_card">
-                <div className="trends_image">
-                  <img src={image5} alt="" />
-                </div>
-                <div className="trends_descr">
-                  <span>Leather shirt dress</span>
-                </div>
-              </div>
+              ))}
             </div>
             <div className="popular">
               <h4>Popular suggestions</h4>

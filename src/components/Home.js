@@ -14,6 +14,7 @@ import { AllContext } from "../AllContext";
 import LatestTrend from "./LatestTrend";
 
 const Home = () => {
+    // context imported from AllContext
   const {setSearch} = useContext(AllContext)
 
   // Handle Text Change
