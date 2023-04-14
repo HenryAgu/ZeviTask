@@ -13,6 +13,9 @@ import { CiSearch } from "react-icons/ci";
 import { AllContext } from "../AllContext";
 import LatestTrend from "./LatestTrend";
 
+// React Link
+import { Link } from "react-router-dom";
+
 const Home = () => {
     // context imported from AllContext
   const {setSearch} = useContext(AllContext)
@@ -33,7 +36,7 @@ const Home = () => {
             placeholder="Search"
             onChange={handleSearchChange}
           />
-          <CiSearch className="search_icon" />
+          <Link to="search"><CiSearch className="search_icon" /></Link>
         </div>
       </div>
       <LatestTrend/>
