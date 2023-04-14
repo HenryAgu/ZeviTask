@@ -13,6 +13,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route
+          exact
           path="/"
           element={
             <AllContextPlug>
@@ -20,7 +21,7 @@ const App = () => {
             </AllContextPlug>
           }
         />
-        <Route path="/search" element={<SearchResult/>}/>
+        <Route path="/search" element={<SearchResult />} />
       </Routes>
     </BrowserRouter>
   );

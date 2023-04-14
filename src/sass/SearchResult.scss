@@ -1,0 +1,48 @@
+.search {
+  padding: 20px;
+  .search_page_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .header_search {
+      display: flex;
+      align-items: center;
+      width: 30%;
+      justify-content: space-between;
+      gap: 10px;
+      border: 1px solid #00000080;
+      border-radius: 14px;
+      padding: 10px 20px;
+
+      input {
+        border: none;
+        outline: none;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        color: #00000066;
+      }
+      .search_icon {
+        font-size: 20px;
+      }
+    }
+    .header_logo {
+      img {
+        width: 70%;
+      }
+    }
+  }
+  .search_top_text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+  }
+  .search_dashboard {
+    display: flex;
+    gap: 30px;
+  }
+}

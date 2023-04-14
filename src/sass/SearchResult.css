@@ -1,0 +1,44 @@
+.search {
+  padding: 20px;
+}
+.search .search_page_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search .search_page_header .header_search {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  justify-content: space-between;
+  gap: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5019607843);
+  border-radius: 14px;
+  padding: 10px 20px;
+}
+.search .search_page_header .header_search input {
+  border: none;
+  outline: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.search .search_page_header .header_search .search_icon {
+  font-size: 20px;
+}
+.search .search_page_header .header_logo img {
+  width: 70%;
+}
+.search .search_top_text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
+}
+.search .search_dashboard {
+  display: flex;
+  gap: 30px;
+}
