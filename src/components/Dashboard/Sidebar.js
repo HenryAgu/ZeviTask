@@ -5,32 +5,37 @@ import "../../sass/Sidebar.css";
 
 // react icon
 import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowUp } from "react-icons/io";
 
 const Sidebar = () => {
   const [showBrand, setShowBrand] = useState(false);
   const [showPrice, setShowPrice] = useState(false);
   const [showRating, setShowRating] = useState(false);
 
-//   Show brand inner content
-  const showBrandContent = () =>{
-    setShowBrand(!showBrand)
-  }
+  //   Show brand inner content
+  const showBrandContent = () => {
+    setShowBrand(!showBrand);
+  };
 
-//   Show price inner content
-  const showPriceContent = () =>{
-    setShowPrice(!showPrice)
-  }
+  //   Show price inner content
+  const showPriceContent = () => {
+    setShowPrice(!showPrice);
+  };
 
   //   Show rating inner content
-  const showRatingContent = () =>{
-    setShowRating(!showRating)
-  }
+  const showRatingContent = () => {
+    setShowRating(!showRating);
+  };
   return (
     <div className="sidebar">
       <div className="brand">
         <div className="brand_header">
           <p>Brand</p>
-          <IoIosArrowDown className="hide_icon" onClick={showBrandContent}/>
+          {showBrand ? (
+            <IoIosArrowUp className="hide_icon" onClick={showBrandContent} />
+          ) : (
+            <IoIosArrowDown className="hide_icon" onClick={showBrandContent} />
+          )}
         </div>
         {showBrand ? (
           <>
@@ -48,7 +53,11 @@ const Sidebar = () => {
       <div className="brand">
         <div className="brand_header">
           <p>price range</p>
-          <IoIosArrowDown className="hide_icon" onClick={showPriceContent}/>
+          {showPrice ? (
+            <IoIosArrowUp className="hide_icon" onClick={showPriceContent} />
+          ) : (
+            <IoIosArrowDown className="hide_icon" onClick={showPriceContent} />
+          )}
         </div>
         {showPrice ? (
           <>
@@ -66,7 +75,11 @@ const Sidebar = () => {
       <div className="brand">
         <div className="brand_header">
           <p>rating</p>
-          <IoIosArrowDown className="hide_icon" onClick={showRatingContent}/>
+          {showRating ? (
+            <IoIosArrowUp className="hide_icon" onClick={showRatingContent} />
+          ) : (
+            <IoIosArrowDown className="hide_icon" onClick={showRatingContent} />
+          )}
         </div>
         {showRating ? (
           <>
