@@ -31,7 +31,7 @@ const MainBar = () => {
       rateValue: "(210)",
     },
     {
-      id: 1,
+      id: 2,
       image: resultImage3,
       itemName: "High waist trousers",
       oldPrice: "Rs. 999",
@@ -40,7 +40,7 @@ const MainBar = () => {
       rateValue: "(210)",
     },
     {
-      id: 1,
+      id: 3,
       image: resultImage5,
       itemName: "High neck pullover",
       oldPrice: "Rs. 899",
@@ -49,7 +49,7 @@ const MainBar = () => {
       rateValue: "(210)",
     },
     {
-      id: 1,
+      id: 4,
       image: resultImage7,
       itemName: "satin jumpsuit",
       oldPrice: "Rs. 650",
@@ -58,8 +58,8 @@ const MainBar = () => {
       rateValue: "(210)",
     },
     {
-      id: 1,
-      image: resultImage1,
+      id: 5,
+      image: resultImage2,
       itemName: "Round neck cotton Tee",
       oldPrice: "Rs. 599",
       newPrice: "Rs.549",
@@ -67,8 +67,8 @@ const MainBar = () => {
       rateValue: "(210)",
     },
     {
-      id: 1,
-      image: resultImage1,
+      id: 6,
+      image: resultImage4,
       itemName: "Round neck cotton Tee",
       oldPrice: "Rs. 599",
       newPrice: "Rs.549",
@@ -76,8 +76,8 @@ const MainBar = () => {
       rateValue: "(210)",
     },
     {
-      id: 1,
-      image: resultImage1,
+      id: 7,
+      image: resultImage6,
       itemName: "Round neck cotton Tee",
       oldPrice: "Rs. 599",
       newPrice: "Rs.549",
@@ -85,8 +85,8 @@ const MainBar = () => {
       rateValue: "(210)",
     },
     {
-      id: 1,
-      image: resultImage1,
+      id: 8,
+      image: resultImage8,
       itemName: "Round neck cotton Tee",
       oldPrice: "Rs. 599",
       newPrice: "Rs.549",
