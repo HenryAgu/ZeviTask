@@ -7,6 +7,13 @@ import "../../sass/Sidebar.css";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
 
+// assets
+import star1 from "../../assets/star1.svg";
+import star2 from "../../assets/star2.svg";
+import star3 from "../../assets/star3.svg";
+import star4 from "../../assets/star4.svg";
+import star5 from "../../assets/star5.svg";
+
 const Sidebar = () => {
   const [showBrand, setShowBrand] = useState(false);
   const [showPrice, setShowPrice] = useState(false);
@@ -50,7 +57,7 @@ const Sidebar = () => {
           </>
         ) : null}
       </div>
-      <div className="brand">
+      <div className="brand price_range">
         <div className="brand_header">
           <p>price range</p>
           {showPrice ? (
@@ -72,7 +79,7 @@ const Sidebar = () => {
           </>
         ) : null}
       </div>
-      <div className="brand">
+      <div className="brand rating">
         <div className="brand_header">
           <p>rating</p>
           {showRating ? (
@@ -82,16 +89,28 @@ const Sidebar = () => {
           )}
         </div>
         {showRating ? (
-          <>
-            <div className="brand_item">
+          <div className="rate">
+            <div className="brand_item brand_rate">
               <input type="checkbox" name="" id="" />
-              <p>under 500</p>
+              <img src={star1} alt="" />
             </div>
-            <div className="brand_item">
+            <div className="brand_item brand_rate">
               <input type="checkbox" name="" id="" />
-              <p>1000 to 3000</p>
+              <img src={star2} alt="" />
             </div>
-          </>
+            <div className="brand_item brand_rate">
+              <input type="checkbox" name="" id="" />
+              <img src={star3} alt="" />
+            </div>
+            <div className="brand_item brand_rate">
+              <input type="checkbox" name="" id="" />
+              <img src={star4} alt="" />
+            </div>
+            <div className="brand_item brand_rate">
+              <input type="checkbox" name="" id="" />
+              <img src={star5} alt="" />
+            </div>
+          </div>
         ) : null}
       </div>
     </div>

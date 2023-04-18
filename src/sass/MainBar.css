@@ -1,0 +1,33 @@
+.main_bar {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.main_bar .card_text h5 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 10px 0;
+  color: #000000;
+}
+.main_bar .card_text span {
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+  color: #6d84ff;
+  margin-right: 5px;
+}
+.main_bar .card_text .card_rate {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.main_bar .card_text .card_rate p {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+}

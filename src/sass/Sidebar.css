@@ -39,3 +39,9 @@
   text-transform: capitalize;
   color: #000000;
 }
+.sidebar .brand .rate {
+  margin-top: 10px;
+}
+.sidebar .brand .rate .brand_rate {
+  padding-top: 10px;
+}
