@@ -97,6 +97,7 @@ const MainBar = () => {
       rating: star5,
       rateValue: "(210)",
     },
+
   ]);
 
   // toggle like click
