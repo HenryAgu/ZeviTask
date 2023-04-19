@@ -19,7 +19,11 @@ import star3 from "../../assets/star3.svg";
 import star4 from "../../assets/star4.svg";
 import star5 from "../../assets/star5.svg";
 
+import defaultHeart from "../../assets/default.svg";
+import heart from "../../assets/heart.svg";
+
 const MainBar = () => {
+  const [likeImage,setLikeImage] = useState(defaultHeart)
   const [results, setResults] = useState([
     {
       id: 1,
@@ -94,10 +98,22 @@ const MainBar = () => {
       rateValue: "(210)",
     },
   ]);
+
+  // toggle like click
+  const handleLike = (id) =>{
+      const likeToUpdate = results.find((result)=> result.id === id)
+      if(likeToUpdate){
+        setLikeImage(likeImage === defaultHeart ? heart : defaultHeart);
+      }
+  }
+
   return (
     <div className="main_bar">
       {results.map((result) => (
-        <div className="main_bar_card">
+        <div className="main_bar_card" key={result.id}>
+          <div className="like">
+            <img src={likeImage} alt="" onClick={()=> handleLike(result.id)}/>
+          </div>
           <img src={result.image} alt="" />
           <div className="card_text">
             <h5>{result.itemName}</h5>
@@ -121,6 +137,6 @@ const MainBar = () => {
       ))}
     </div>
   );
-};
+}
 
 export default MainBar;

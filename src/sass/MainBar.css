@@ -1,10 +1,19 @@
 .main_bar {
-  padding: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
-.main_bar .card_text h5 {
+.main_bar .main_bar_card .like {
+  text-align: right;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.main_bar .main_bar_card .like img {
+  position: relative;
+  bottom: -40px;
+  right: 10px;
+}
+.main_bar .main_bar_card .card_text h5 {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -12,19 +21,19 @@
   margin: 10px 0;
   color: #000000;
 }
-.main_bar .card_text span {
+.main_bar .main_bar_card .card_text span {
   font-weight: 600;
   font-size: 18px;
   text-decoration: none;
   color: #6d84ff;
   margin-right: 5px;
 }
-.main_bar .card_text .card_rate {
+.main_bar .main_bar_card .card_text .card_rate {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-.main_bar .card_text .card_rate p {
+.main_bar .main_bar_card .card_text .card_rate p {
   color: rgba(0, 0, 0, 0.8);
   font-family: "Poppins";
   font-style: normal;
