@@ -33,6 +33,7 @@ const MainBar = () => {
       newPrice: "Rs.549",
       rating: star5,
       rateValue: "(210)",
+      liked: false
     },
     {
       id: 2,
@@ -42,6 +43,7 @@ const MainBar = () => {
       newPrice: "Rs.749",
       rating: star4,
       rateValue: "(210)",
+      liked: false
     },
     {
       id: 3,
@@ -51,6 +53,7 @@ const MainBar = () => {
       newPrice: "Rs.849",
       rating: star5,
       rateValue: "(210)",
+      liked: false
     },
     {
       id: 4,
@@ -60,6 +63,7 @@ const MainBar = () => {
       newPrice: "Rs.549",
       rating: star5,
       rateValue: "(210)",
+      liked: false
     },
     {
       id: 5,
@@ -78,6 +82,7 @@ const MainBar = () => {
       newPrice: "Rs.549",
       rating: star5,
       rateValue: "(210)",
+      liked: false
     },
     {
       id: 7,
@@ -87,6 +92,7 @@ const MainBar = () => {
       newPrice: "Rs.549",
       rating: star5,
       rateValue: "(210)",
+      liked: false
     },
     {
       id: 8,
@@ -96,16 +102,23 @@ const MainBar = () => {
       newPrice: "Rs.549",
       rating: star5,
       rateValue: "(210)",
+      liked: false
     },
 
   ]);
 
   // toggle like click
   const handleLike = (id) =>{
-      const likeToUpdate = results.find((result)=> result.id === id)
-      if(likeToUpdate){
-        setLikeImage(likeImage === defaultHeart ? heart : defaultHeart);
-      }
+      // console.log(id)
+      setResults(
+        results.map((item) => {
+          if(item.id === id){
+           return {...item, liked: !item.liked}
+          }
+          return item
+       })
+      )
+      
   }
 
   return (
@@ -113,7 +126,7 @@ const MainBar = () => {
       {results.map((result) => (
         <div className="main_bar_card" key={result.id}>
           <div className="like">
-            <img src={likeImage} alt="" onClick={()=> handleLike(result.id)}/>
+            <img src={result.liked? heart : defaultHeart } alt="" onClick={()=> handleLike(result.id)}/>
           </div>
           <img src={result.image} alt="" />
           <div className="card_text">
