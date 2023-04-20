@@ -1,6 +1,6 @@
 # Zevi
 
-A website that i used to practice some UI and functionality task too. I learnt how to implement the like function like that of Instagram and also using the css "sticky" position.
+A simple website that i used to practice some UI and functionality task too. I learnt how to implement the like function like that of Instagram and also using the css "sticky" position.
 
 # Screenshots
 
