@@ -1,7 +1,7 @@
 import React from 'react'
 
 // stylesheet
-import "../sass/SearchResult.css";
+import "../sass/SearchResult.scss";
 
 // assets
 import Logo from "../assets/Logo.svg";

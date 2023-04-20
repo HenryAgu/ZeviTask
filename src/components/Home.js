@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 
 // stylesheet
-import "../sass/Home.css";
+import "../sass/Home.scss";
 
 // assets
 import Logo from "../assets/Logo.svg";

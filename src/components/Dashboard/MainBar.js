@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 // stylesheet
-import "../../sass/MainBar.css";
+import "../../sass/MainBar.scss";
 
 // assets
 import resultImage1 from "../../assets/resultImage1.svg";

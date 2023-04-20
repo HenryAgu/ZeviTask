@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 // stylesheet
-import "../../sass/Sidebar.css";
+import "../../sass/Sidebar.scss";
 
 // react icon
 import { IoIosArrowDown } from "react-icons/io";

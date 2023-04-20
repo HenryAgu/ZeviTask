@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 
 // stylesheet
-import "../sass/LatestTrend.css";
+import "../sass/LatestTrend.scss";
 
 // assets
 import image1 from "../assets/image1.svg";
