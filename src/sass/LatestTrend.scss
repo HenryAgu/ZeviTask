@@ -68,3 +68,17 @@
     }
   }
 }
+
+// Responsiveness starts here
+
+/* Small Screens */
+@media (max-width: 480px) {
+.result_box{
+  width: 80%;
+  .latest_trends{
+    .trends{
+      grid-template-columns: repeat(3,1fr);
+    }
+  }
+}
+}

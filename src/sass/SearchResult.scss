@@ -47,3 +47,44 @@
     gap: 30px;
   }
 }
+
+/* Responsiveness starts here */
+
+/* medium screens */
+@media (max-width: 991px) {
+  .search {
+    .search_page_header {
+      .header_search {
+        width: 55%;
+      }
+    }
+    .search_top_text {
+      font-size: 16px;
+    }
+  }
+  .search_dashboard {
+    margin-top: 50px;
+  }
+}
+
+/* Small Screens */
+@media only screen and (max-width: 480px) {
+  .search {
+    .search_page_header {
+      flex-direction: column-reverse;
+      gap: 30px;
+
+      .header_search{
+        width: 90%;
+      }
+      .header_logo{
+        img{
+          width: 150px;
+        }
+      }
+    }
+    .search_dashboard {
+      flex-direction: column;
+    }
+  }
+}

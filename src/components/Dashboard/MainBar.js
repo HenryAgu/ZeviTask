@@ -128,7 +128,7 @@ const MainBar = () => {
           <div className="like">
             <img src={result.liked? heart : defaultHeart } alt="" onClick={()=> handleLike(result.id)}/>
           </div>
-          <img src={result.image} alt="" />
+          <img src={result.image} alt="" className="item_img"/>
           <div className="card_text">
             <h5>{result.itemName}</h5>
             <span

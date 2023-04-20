@@ -45,3 +45,17 @@
     }
   }
 }
+
+/* Responsiveness starts here */
+
+/* medium screens */
+@media (max-width: 991px) {
+  .home {
+    .search {
+      margin-top: 150px;
+      .search_box {
+        width: 100%;
+      }
+    }
+  }
+}
