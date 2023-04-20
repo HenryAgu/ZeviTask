@@ -73,6 +73,7 @@ const MainBar = () => {
       newPrice: "Rs.549",
       rating: star5,
       rateValue: "(210)",
+      liked: false
     },
     {
       id: 6,
@@ -111,7 +112,7 @@ const MainBar = () => {
   const handleLike = (id) =>{
       // console.log(id)
       setResults(
-        results.map((item) => {
+         results.map((item) => {
           if(item.id === id){
            return {...item, liked: !item.liked}
           }
